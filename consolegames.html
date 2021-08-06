@@ -66,6 +66,20 @@
       }
     </script>
 
+    <button onClick="nameTest()">Click Me!</button>
+
+    <p id="demo2"></p>
+
+    <script>
+      function nameTest() {
+        var person = prompt("Please enter your name", "Happy Gilmore");
+        if (person != null) {
+          document.getElementById("demo2").innerHTML =
+            "Hello " + person + "! Thank you for visiting, today!";
+        }
+      }
+    </script>
+
     <a href="https://purplehaynes.github.io/Project-One/index.html">Home</a
     ><br /><br />
 
