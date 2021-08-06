@@ -43,17 +43,20 @@
     <div>
       <div>
         <img
-          src="/Users/kylehaynes/project-one/Project-One/Images/Screen Shot 2021-07-28 at 10.52.04 PM.png"
+          src="/Users/kylehaynes/project-one/Project-One/Images/Banner.png"
           alt="Banner"
         />
       </div>
 
       <h1>PC Gamer vs Console Gamer</h1>
 
-      <p>
-        Here is some content about console and pc gaming. Please like and
-        subscribe for less content.
-      </p>
+      <p id="demo">Good Evening, new friend!</p>
+
+      <script>
+        if (new Date().getHours() < 18) {
+          document.getElementById("demo").innerHTML = "Good day!";
+        }
+      </script>
 
       <a href="https://purplehaynes.github.io/Project-One/index.html">Home</a
       ><br /><br />

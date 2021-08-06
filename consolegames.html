@@ -13,6 +13,9 @@
       p {
         text-align: center;
       }
+      #demo {
+        text-align: center;
+      }
       div {
         text-align: center;
       }
@@ -48,12 +51,20 @@
   <body>
     <div>
       <img
-        src="/Users/kylehaynes/project-one/Project-One/Images/Screen Shot 2021-07-28 at 10.52.04 PM.png"
+        src="/Users/kylehaynes/project-one/Project-One/Images/Banner.png"
         alt="Banner"
       />
     </div>
 
     <h1>Console Gamer</h1>
+
+    <p id="demo">Good Evening, new friend!</p>
+
+    <script>
+      if (new Date().getHours() < 18) {
+        document.getElementById("demo").innerHTML = "Good day!";
+      }
+    </script>
 
     <a href="https://purplehaynes.github.io/Project-One/index.html">Home</a
     ><br /><br />
@@ -83,7 +94,7 @@
 
     <img
       style="padding-left: 100px; padding-bottom: 700px; text-align: top"
-      src="/Users/kylehaynes/project-one/Project-One/Images/Screen Shot 2021-07-28 at 10.36.12 PM.png"
+      src="/Users/kylehaynes/project-one/Project-One/Images/Console.png"
       width="400"
       height="200"
       alt="Consoles"
