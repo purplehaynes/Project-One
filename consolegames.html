@@ -50,10 +50,7 @@
   </head>
   <body>
     <div>
-      <img
-        src="Images/Banner.png"
-        alt="Banner"
-      />
+      <img src="Images/Banner.png" alt="Banner" />
     </div>
 
     <h1>Console Gamer</h1>
@@ -77,6 +74,38 @@
           document.getElementById("demo2").innerHTML =
             "Hello " + person + "! Thank you for visiting, today!";
         }
+      }
+    </script>
+
+    <button onClick="consoleFunction()">PlayStation or Xbox?</button>
+
+    <p id="demo3"></p>
+
+    <script>
+      function consoleFunction() {
+        var text;
+        var favConsole = prompt(
+          "What is your favorite console?",
+          "PlayStation or Xbox?"
+        );
+        switch (favConsole) {
+          case "PlayStation":
+            text = "Nice choice, me too!";
+            break;
+          case "playstation":
+            text = "Very cool";
+            break;
+          case "Playstation":
+            text = "Same!";
+            break;
+          case "Xbox":
+            text = "I respect your opinion, but you're wrong and I hate you.";
+            break;
+          case "xbox":
+            text = "Ewww";
+            break;
+        }
+        document.getElementById("demo3").innerHTML = text;
       }
     </script>
 

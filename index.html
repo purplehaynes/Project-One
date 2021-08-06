@@ -42,10 +42,7 @@
   <body>
     <div>
       <div>
-        <img
-          src="Images/Banner.png"
-          alt="Banner"
-        />
+        <img src="Images/Banner.png" alt="Banner" />
       </div>
 
       <h1>PC Gamer vs Console Gamer</h1>
@@ -69,6 +66,29 @@
             document.getElementById("demo2").innerHTML =
               "Hello " + person + "! Thank you for visiting, today!";
           }
+        }
+      </script>
+
+      <button onClick="preferenceFunction()">Console or PC?</button>
+
+      <p id="demo3"></p>
+
+      <script>
+        function preferenceFunction() {
+          var text;
+          var favPlatform = prompt(
+            "What is your favorite gaming platform?",
+            "Console or PC?"
+          );
+          switch (favPlatform) {
+            case "Console":
+              text = "Very cool!";
+              break;
+            case "PC":
+              text = "That's awesome!";
+              break;
+          }
+          document.getElementById("demo3").innerHTML = text;
         }
       </script>
 
