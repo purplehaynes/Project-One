@@ -16,11 +16,17 @@
       #demo {
         text-align: center;
       }
+      #demotwo {
+        text-align: center;
+      }
       div {
         text-align: center;
       }
       h4 {
         text-align: right;
+      }
+      #demothree {
+        text-align: center;
       }
       p {
         text-align: right;
@@ -79,13 +85,13 @@
 
     <button onClick="nameTest()">Click Me!</button>
 
-    <p id="demo2"></p>
+    <p id="demotwo"></p>
 
     <script>
       function nameTest() {
         var person = prompt("Please enter your name", "Happy Gilmore");
         if (person != null) {
-          document.getElementById("demo2").innerHTML =
+          document.getElementById("demotwo").innerHTML =
             "Hello " + person + "! Thank you for visiting, today!";
         }
       }
@@ -93,7 +99,7 @@
 
     <button onClick="consoleFunction()">PlayStation or Xbox?</button>
 
-    <p id="demo3"></p>
+    <p id="demothree"></p>
 
     <script>
       function consoleFunction() {
@@ -119,7 +125,7 @@
             text = "Ewww";
             break;
         }
-        document.getElementById("demo3").innerHTML = text;
+        document.getElementById("demothree").innerHTML = text;
       }
     </script>
 
